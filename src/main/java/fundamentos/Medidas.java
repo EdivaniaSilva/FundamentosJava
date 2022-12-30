@@ -8,15 +8,13 @@ import java.util.Scanner;
 // Classe
 public class Medidas {
     // Atributos
-    static Scanner entrada;
+    static Scanner entrada = new Scanner(System.in);
 
     // Métodos e Funções
 
-    public static void main(String[] args) {
+    public void main(String[] args) {
         String opcao = "";
         int area = 0;
-
-        entrada = new Scanner(System.in); // instanciar o objeto para ler entrada do console
 
       //  while (!opcao.toUpperCase().equals("S")){
 
@@ -164,7 +162,7 @@ public class Medidas {
         }
     }
 
-    public static void contagemRegressiva(){
+    public void contagemRegressiva(){
 
         System.out.print("Você quer fazer uma contagem regressiva a partir de qual número? ");
         int numeroInicial = entrada.nextInt();
@@ -181,6 +179,7 @@ public class Medidas {
         }
         System.out.println();
     }
+
 
     public static void divisao() {
         try {
